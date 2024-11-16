@@ -1,9 +1,6 @@
 # Hadoop Multi-node Cluster Setup
 Hadoop is an ideal tool to begin understanding distributed storage and distributed computing. These concepts form solid foundations for Data Engineering.
 
-Though in production we prefer cloud-based Hadoop solutions (like AWS EMR, Cloudera CDH, etc), setting up a Hadoop cluster manually gives clarity about distributed systems.
-
-This beginner's tutorial is written purely for educational purposes. This repository has minimal Hadoop configurations for the master and worker nodes. For more explanation, refer YouTube video https://youtu.be/c2Lg5c8v4YQ.
 
 ## Hadoop Cluster Setup steps
 * step 1: Install VirtualBox on your system.
@@ -167,3 +164,6 @@ This beginner's tutorial is written purely for educational purposes. This reposi
     * master terminal> stop-yarn.sh
     * master terminal> stop-dfs.sh
 * step 23: Shutdown all VMs.
+
+## Reference
+* https://youtu.be/c2Lg5c8v4YQ
