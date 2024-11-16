@@ -1,5 +1,9 @@
 # Hadoop Multi-node Cluster Setup
+Hadoop is an ideal tool to begin understanding distributed storage and distributed computing. These concepts form solid foundations for Data Engineering.
 
+Though in production we prefer cloud-based Hadoop solutions (like AWS EMR, Cloudera CDH, etc), setting up a Hadoop cluster manually gives clarity about distributed systems.
+
+This beginner's tutorial is written purely for educational purposes. This repository has minimal Hadoop configurations for the master and worker nodes. For more explanation, refer YouTube video https://youtu.be/c2Lg5c8v4YQ.
 
 ## Hadoop Cluster Setup steps
 * step 1: Install VirtualBox on your system.
@@ -60,8 +64,8 @@
         export PATH=$HADOOP_HOME/sbin:$HADOOP_HOME/bin:$PATH
         ```
     * terminal> source ~/.bashrc
-    * terminal> git clone https://github.com/yagnesh0312/hadoop-and-spark.git
-    * terminal> cp hadoop-and-spark/hadoop-cluster-install/master/* $HADOOP_HOME/etc/hadoop/
+    * terminal> git clone https://github.com/nilesh-g/hadoop-cluster-install.git
+    * terminal> cp hadoop-cluster-install/master/* $HADOOP_HOME/etc/hadoop/
 * step 10: Examine the master configration.
     * terminal> cd $HADOOP_HOME/etc/hadoop/
     * terminal> vim core-site.xml
@@ -162,4 +166,4 @@
 * step 22: Stop the Hadoop and verify.
     * master terminal> stop-yarn.sh
     * master terminal> stop-dfs.sh
-* step 23: Shutdown all VMs.# hadoop-and-spark
+* step 23: Shutdown all VMs.
