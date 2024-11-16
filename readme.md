@@ -64,8 +64,8 @@ This beginner's tutorial is written purely for educational purposes. This reposi
         export PATH=$HADOOP_HOME/sbin:$HADOOP_HOME/bin:$PATH
         ```
     * terminal> source ~/.bashrc
-    * terminal> git clone https://github.com/nilesh-g/hadoop-cluster-install.git
-    * terminal> cp hadoop-cluster-install/master/* $HADOOP_HOME/etc/hadoop/
+    * terminal> git clone https://github.com/yagnesh0312/hadoop-and-spark.git
+    * terminal> cp hadoop-and-spark/master/* $HADOOP_HOME/etc/hadoop/
 * step 10: Examine the master configration.
     * terminal> cd $HADOOP_HOME/etc/hadoop/
     * terminal> vim core-site.xml
@@ -93,7 +93,7 @@ This beginner's tutorial is written purely for educational purposes. This reposi
     * terminal> sudo ip a
     * terminal> sudo hostnamectl set-hostname worker1
     * terminal> cd ~
-    * terminal> cp hadoop-cluster-install/worker/* $HADOOP_HOME/etc/hadoop/
+    * terminal> cp hadoop-and-spark/worker/* $HADOOP_HOME/etc/hadoop/
 * step 13: Examine the worker configration.
     * terminal> cd $HADOOP_HOME/etc/hadoop/
     * terminal> vim core-site.xml
@@ -120,7 +120,7 @@ This beginner's tutorial is written purely for educational purposes. This reposi
     * terminal> sudo ip a
     * terminal> sudo hostnamectl set-hostname worker2
     * terminal> cd ~
-    * terminal> cp hadoop-cluster-install/worker/* $HADOOP_HOME/etc/hadoop/
+    * terminal> cp hadoop-and-spark/worker/* $HADOOP_HOME/etc/hadoop/
     * terminal> init 0
 * step 16: Create Linked Clone of this VM as "worker3".
 * step 17: Login into new VM with hduser and configure network and hadoop.
@@ -140,7 +140,7 @@ This beginner's tutorial is written purely for educational purposes. This reposi
     * terminal> sudo ip a
     * terminal> sudo hostnamectl set-hostname worker3
     * terminal> cd ~
-    * terminal> cp hadoop-cluster-install/worker/* $HADOOP_HOME/etc/hadoop/
+    * terminal> cp hadoop-and-spark/worker/* $HADOOP_HOME/etc/hadoop/
     * terminal> init 0
 * step 18: Start all VMs. Copy master ssh id on all workers. Ensure that master is able to login to itself and all workers without password over ssh.
     * master terminal> ssh-keygen -t rsa -P ""
